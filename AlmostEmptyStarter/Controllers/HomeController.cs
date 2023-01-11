@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AlmostEmptyStarter.Controllers.Controllers
+namespace AlmostEmptyStarter.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,6 +13,11 @@ namespace AlmostEmptyStarter.Controllers.Controllers
         }
 
         public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }
